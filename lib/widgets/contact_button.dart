@@ -17,7 +17,7 @@ class ContactButton extends StatelessWidget {
       padding: const EdgeInsets.all(10.0),
       child: TextButton.icon(
           style: TextButton.styleFrom(
-              textStyle: const TextStyle(color: Colors.blueGrey),
+              textStyle: TextStyle(color: Colors.blueGrey.shade900),
               backgroundColor: Colors.black,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
@@ -33,8 +33,8 @@ class ContactButton extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               buttonText,
-              style: const TextStyle(
-                  color: Colors.blueGrey, fontWeight: FontWeight.w700),
+              style: TextStyle(
+                  color: Colors.brown.shade700, fontWeight: FontWeight.w700),
             ),
           )),
     );

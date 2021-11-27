@@ -41,6 +41,38 @@ class Portfolio extends StatelessWidget {
               })
         ],
       ),
+      body: Stack(children: [
+        Row(
+          children: [
+            Expanded(
+              flex: 2,
+              child: Container(
+                  color: Colors.blueGrey.shade900,
+                  child: Column(children: [
+                    Expanded(
+                        child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        Image.asset(
+                          'assets/images/LaptopCode.png',
+                          scale: 2.0,
+                        ),
+                        const Text('I\'m a Coastal Kraken \n I make stuff!!',
+                            style: TextStyle(color: Colors.blueGrey))
+                      ],
+                    ))
+                  ])),
+            ),
+            Expanded(
+                flex: 3,
+                child: Container(
+                    color: Colors.blueGrey.shade900,
+                    child: Column(
+                      children: [],
+                    )))
+          ],
+        )
+      ]),
     );
   }
 }
