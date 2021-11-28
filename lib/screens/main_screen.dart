@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ss_portfolio/util/util.dart';
 import 'package:flutter_ss_portfolio/widgets/body.dart';
+import 'package:flutter_ss_portfolio/widgets/button_row.dart';
 import 'package:flutter_ss_portfolio/widgets/contact_button.dart';
 
 class Portfolio extends StatelessWidget {
@@ -10,7 +12,7 @@ class Portfolio extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Colors.tealAccent,
+        backgroundColor: Colors.teal.shade900,
         title: Row(
           children: const [
             CircleAvatar(
@@ -38,11 +40,22 @@ class Portfolio extends StatelessWidget {
               buttonText: 'Contact Me',
               icon: const Icon(Icons.send_sharp),
               onPressed: () {
-                print('herro!');
+                launchMailto();
               })
         ],
       ),
-      body: Stack(children: [Body()]),
+      body: Stack(children: [
+        Body(),
+        Align(
+            alignment: Alignment.bottomLeft,
+            child: Padding(
+              padding: const EdgeInsets.all(48),
+              child: SizedBox(
+                height: 60,
+                child: const ButtonRow(),
+              ),
+            ))
+      ]),
     );
   }
 }
