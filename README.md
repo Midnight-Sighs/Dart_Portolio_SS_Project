@@ -1,16 +1,3 @@
 # flutter_ss_portfolio
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Followed a skillshare tutorial to create a portfolio in Dart/Flutter.  It was my first time working in it and primarily I wanted to see if I liked it.  I do, I just think it will take some getting used to.  But so far, I really enjoy using it!
